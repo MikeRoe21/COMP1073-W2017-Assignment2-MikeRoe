@@ -1,0 +1,63 @@
+<!-- Contact.html by Mike Roe (200166222) on http://clientsidescriptingmikeroe.azurewebsites.net -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <title>Contact</title>
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="./Scripts/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./Scripts/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Content/app.css">
+</head>
+
+
+<body id="Contact">
+
+    <!-- Placing the other two pages in a list for better organization -->
+    <ul>
+    <li><a href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>Home</a></li>
+    <li><a href="Projects.html"><i class="fa fa-files-o fa-fw" aria-hidden="true"></i>Projects by me</a></li>
+    <!-- When clicking the logo, for some reason the URL omits the /Assets which leads to a broken page instead of displaying the logo.jpg -->
+    <li><a href="Logo.jpg" class="img"><img src="./Assets/Logo.jpg"></a></li>
+    </ul>
+
+
+                        <!-- Editing the contact form so that it will function for this assignment -->
+
+                        <form name="" action="" method="POST">
+
+						<fieldset>
+							<legend>Contact Me</legend>
+							<div>
+								<label for="fname"><i class="fa fa-user fa-fw"></i>First Name </label>
+								<input type="text" id="fname" name="fname" placeholder="required!" required />
+						  </div>
+                          <div>
+								<label for="lname"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Last Name</label>
+								<input type="text" id="lname" name="lname"   />
+						  </div>
+							<div>
+								<label for="EmailAddress"><i class="fa fa-envelope-o fa-fw"></i>Email Address</label>
+								<input type="text" id="EmailAddress" name="EmailAddress"  />
+							</div>
+							<div>
+								<label for="Phone number"><i class="fa fa-phone fa-fw"></i>Phone Number</label>
+								<input type="text" id="PhoneNumber" name="Phone Number"  />
+							</div>
+							</fieldset>
+
+                   
+                            <button type="submit">Leave Comment</button>
+
+                            </form>
+							
+
+
+    <!-- JavaScript  -->
+    <script src="./Scripts/lib/jquery/dist/jquery.min.js"></script>
+    <script src="./Scripts/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./Scripts/app.js"></script>
+</body>
+</html>
