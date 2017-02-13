@@ -1,4 +1,4 @@
-/* app.css by Mike Roe (200166222) on http://clientsidescriptingmikeroe.azurewebsites.net */
+/* app.css by Mike Roe (200166222) on  */
 /* Rules for the three web pages: */
 
 body{
@@ -30,7 +30,6 @@ fieldset{
 
 button{
     border:none;
-    margin:40px 550px;
     vertical-align: auto;
     width: 150px;
     

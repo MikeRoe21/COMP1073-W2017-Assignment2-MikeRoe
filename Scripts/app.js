@@ -1,25 +1,65 @@
-/* app.js by Mike Roe (200166222) on http://clientsidescriptingmikeroe.azurewebsites.net */
+/* app.js by Mike Roe (200166222) on  */
 /* Using JavaScript to write the text on the main page */
 
+/* Properly using JavaScript to display text on my index.html */
 
-// Testing out IIFE
+"use strict";
+
+// IIFE - Immediately Involked Function Expression
 
 (function () {
 
 
+    console.log("App Started...");
+    console.info("Page Title: " + document.title);
+    switch (document.title) {
+        case "About Me":
 
-});
+            let Introduction = document.getElementById("Introduction");
+            let myContent = 'My name is Mike Roe. I am a first year student just trying to get my name out there.';
+            Introduction.textContent = myContent;
 
-var FirstParagraph = document.getElementById("FirstParagraph");
-var Intro = "My name is Mike Roe. I am a first year student just trying to get my name out there.";
-FirstParagraph.textContent = Intro;
+            let Description = document.getElementById("Description");
+            let PhotoInfo = 'My Graduating class from this past April. I am in the very back, second from the left with the long hair.';
+            Description.innerHTML = PhotoInfo;
 
-var SecondParagraph = document.getElementById("SecondParagraph");
-var Photo = "My Graduating class from last April. I am in the back, 2nd from the left with the long hair.";
-SecondParagraph.textContent = Photo;
+            break;
 
-
+        case "Projects":
 
 
 
+
+            break;
+
+        case "Contact":
+
+            let Name = document.getElementById("Name");
+            document.getElementById("Name").value;
+            let Email = document.getElementById("Email");
+            document.getElementById("Email").value;
+            let Message = document.getElementById("Message");
+            document.getElementById("Message").value;
+            let ButtonSubmit = document.getElementById("ButtonSubmit");
+
+            ButtonSubmit.addEventListener("click", function (event) {
+                event.preventDefault();
+
+                console.log(Name.value);
+                console.log(Email.value);
+                console.log(Message.value);
+    
+
+            });
+
+            break;
+    }
+
+    /*let myVariable = 500; (was just playing around with printing to the console) */
+
+
+
+
+
+})();
 

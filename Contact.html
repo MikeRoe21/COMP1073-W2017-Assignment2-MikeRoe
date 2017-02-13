@@ -1,9 +1,9 @@
-<!-- Contact.html by Mike Roe (200166222) on http://clientsidescriptingmikeroe.azurewebsites.net -->
+<!-- Contact.html by Mike Roe (200166222) on  -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"
     <title>Contact</title>
     <!-- CSS stylesheets -->
     <link rel="stylesheet" href="./Scripts/lib/bootstrap/dist/css/bootstrap.min.css">
@@ -17,41 +17,47 @@
 
     <!-- Placing the other two pages in a list for better organization -->
     <ul>
-    <li><a href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>Home</a></li>
-    <li><a href="Projects.html"><i class="fa fa-files-o fa-fw" aria-hidden="true"></i>Projects by me</a></li>
-    <!-- When clicking the logo, for some reason the URL omits the /Assets which leads to a broken page instead of displaying the logo.jpg -->
-    <li><a href="Logo.jpg" class="img"><img src="./Assets/Logo.jpg"></a></li>
+        <li><a href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>Home</a></li>
+        <li><a href="Projects.html"><i class="fa fa-files-o fa-fw" aria-hidden="true"></i>Projects by me</a></li>
+        <!-- When clicking the logo, for some reason the URL omits the /Assets which leads to a broken page instead of displaying the logo.jpg -->
+        <li>
+            <a href="Logo.jpg" class="img"><img src="./Assets/Logo.jpg"></a>
+        </li>
     </ul>
 
 
-                        <!-- Editing the contact form so that it will function for this assignment -->
+    <!-- Editing the contact form so that it will function for this assignment -->
+
+    <div class="container" id="contactform">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+                <h1 id="FormHead">Contact Me!</h1>
+
+                <form>
+                    <div class="form-group">
+                        <label for="Name">Name</label>
+                        <input type="text" class="form-control" id="Name" placeholder="Please enter your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="text" class="form-control" id="Email" placeholder="Please enter your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Message">Message</label>
+                        <textarea class="form-control" rows="3" id="Message"  placeholder="Please leave a Message" required></textarea>
+                    </div>
+     
+                    <button type="submit" id="ButtonSubmit" class="btn btn-success">Send</button>
+                    <button type="reset" id="ButtonReset" class="btn btn-danger">Reset</button>
+                </form>
 
 
-						<fieldset>
-							<legend>Contact Me</legend>
-							<div>
-								<label for="fname"><i class="fa fa-user fa-fw"></i>First Name </label>
-								<input type="text" id="fname" name="fname" placeholder="required!" required />
-						  </div>
-                          <div>
-								<label for="lname"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Last Name</label>
-								<input type="text" id="lname" name="lname"   />
-						  </div>
-							<div>
-								<label for="EmailAddress"><i class="fa fa-envelope-o fa-fw"></i>Email Address</label>
-								<input type="text" id="EmailAddress" name="EmailAddress"  />
-							</div>
-							<div>
-								<label for="Phone number"><i class="fa fa-phone fa-fw"></i>Phone Number</label>
-								<input type="text" id="PhoneNumber" name="Phone Number"  />
-							</div>
-							</fieldset>
+            </div>
+        </div>
+    </div>
 
-                   
-                            <button type="button" class="btn btn-success">Leave Comment</button>
 
-                            </form>
-							
+
 
 
     <!-- JavaScript  -->
@@ -59,4 +65,5 @@
     <script src="./Scripts/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./Scripts/app.js"></script>
 </body>
+
 </html>
