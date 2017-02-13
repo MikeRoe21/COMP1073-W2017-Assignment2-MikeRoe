@@ -24,14 +24,13 @@ a img{
 
 fieldset{
     border:none;
-    width:500px;
-    margin:50px auto;
+    width:400px;
+    margin:40px 425px;
 }
 
 button{
     border:none;
     margin:40px 550px;
-    color:red;
     vertical-align: auto;
     width: 150px;
     
@@ -42,19 +41,19 @@ legend{
 }
 
 #fname{
-    width: 500px;
+    width: 400px;
 }
 
 #lname{
-    width: 500px;
+    width: 400px;
 }
 
 #EmailAddress{
-    width: 500px;
+    width: 400px;
 }
 
 #PhoneNumber {
-    width: 500px;
+    width: 400px;
 }
 
 img{
